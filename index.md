@@ -1,16 +1,18 @@
 # 尝试重复使用神经网络层
-[这是一个空箱子](www.baidu.com)
+
+
+[这是一个空箱子](https://aaeghijlnz.github.io/)
 ********
 > 搭建网络
 ```Python
-class MyNet(nn.Module):    
-    def __init__(self):       
-        super(MyNet, self).__init__()        
-        self.l = nn.Linear(3,1)    
-    def forward(self,x):        
-        x1 = self.l(x[0:3])        
-        x2 = self.l(x[3:6])        
-        x3 = self.l(x[6:9])        
+class MyNet(nn.Module):
+    def __init__(self): 
+        super(MyNet, self).__init__()
+        self.l = nn.Linear(3,1)
+    def forward(self,x):
+        x1 = self.l(x[0:3])
+        x2 = self.l(x[3:6])
+        x3 = self.l(x[6:9])
         return x1+x2+x3
 ```
 > 可视化网络
@@ -41,7 +43,7 @@ for i in range(1000):
 ```
 * 训练
     （略）
-    ![f7df647acafa7eec694ab5b80847357d.png](en-resource://database/962:1)
+    ![训练结果](./train.png)
     
 * 测试1  数据同训练样本
 ```python
@@ -61,7 +63,7 @@ plt.figure()
 plt.plot(y,'r')
 plt.plot(yy,'g*')
 ```
-![8f86ef6371749d1bf8193c3e0905675e.png](en-resource://database/964:1)
+![测试1](./test1.png)
 
 * 测试2  输入三维数据，仅用网络的层预测
 ```python
@@ -79,7 +81,7 @@ plt.figure()
 plt.plot(y,'r')
 plt.plot(yy,'g*')
 ```
-![ecea373e7e7b9b05e93382a4461cae3b.png](en-resource://database/966:1)
+![测试2](./test2.png)
 
 * 测试3  输入15维数据，重新组织了网络结构
 ```python
@@ -102,5 +104,4 @@ plt.figure()
 plt.plot(y,'r')
 plt.plot(yy,'g*')
 ```
-![202255a1dae88c75dd6274815c6b9ecb.png](en-resource://database/968:1)
-
+![测试3](./test3.png)
