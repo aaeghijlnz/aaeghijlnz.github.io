@@ -25,6 +25,7 @@ with SummaryWriter(comment='LinearInLinear') as w:
     w.add_graph(MyNet(), dummy_input, True)
 ```
 在终端输入`tensorboard --logdir ./runs`
+![训练结果](./网络结构.png)
 目前我只在linux下tensorboardX的examples里面成功画出了网络结构，不知道为何程序在其他地方不显示结果
 *******************
 > 训练与测试
