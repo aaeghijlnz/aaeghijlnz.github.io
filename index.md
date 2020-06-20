@@ -4,7 +4,7 @@
 [这是一个空箱子](https://aaeghijlnz.github.io/)
 ********
 > 搭建网络
-```Python
+```python
 class MyNet(nn.Module):
     def __init__(self): 
         super(MyNet, self).__init__()
@@ -17,7 +17,7 @@ class MyNet(nn.Module):
 ```
 > 可视化网络
 
-```Python
+```python
 
 from tensorboardX import SummaryWriter
 dummy_input = (torch.zeros(10,9),)
