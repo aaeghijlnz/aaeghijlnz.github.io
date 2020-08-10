@@ -1,5 +1,5 @@
 # 尝试重复使用神经网络层
-
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-7375-969X" href="https://orcid.org/0000-0001-7375-969X" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0001-7375-969X</a></div>
 
 [这是一个空箱子](https://aaeghijlnz.github.io/)
 ********
